@@ -10,8 +10,8 @@ int main(void)
 {
 	char az, e, q;
 
-	e = 'e'
-	q = 'q'
+	e = 'e';
+	q = 'q';
 
 	for (az = 'a'; az <= 'z'; az++)
 {
