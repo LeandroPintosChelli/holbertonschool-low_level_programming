@@ -8,17 +8,24 @@
  */
 int main(void)
 {
-int x;
+	int x, z;
 
-for (x = '0'; x <= '9'; x++)
-{putchar(x);
-
-if (x != '9')
+for (x = '0'; x < '9'; x++)
+{
+for (z = x + 1; z <= '9'; z++)
+{
+if (z != x)
+{
+putchar(x);
+putchar(z);
+{
+if (x == '8' && z == '9')
+}
 {
 putchar(',');
 putchar(' ');
 }
 }
-putchar('\n');
-return (0);
+	putchar('\n');
+	return (0);
 }
