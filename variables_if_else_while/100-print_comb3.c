@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-	int x, z;
+int x, z;
 {
-for (x = '0'; x < '9'; x++)
+for (x = '0'; x <= '9'; x++)
 {
 for (z = x + 1; z <= '9'; z++)
 {
@@ -29,5 +29,5 @@ putchar(',');
 }
 }
 putchar('\n');
-	return (0);
+return (0);
 }
