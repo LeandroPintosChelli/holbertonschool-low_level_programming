@@ -9,9 +9,17 @@
 int main(void)
 {
 	char az;
+	char e;
+	char q;
 
-	for (az = a..d, f..p, r..z az <= 'z'; az++)
+	e = 'e'
+	q = 'q'
+
+	for (az = 'a' az <= 'z'; az++)
+{
+	if (az != e && az != q)
 	putchar(az);
 	putchar('\n');
+}
 	return (0);
 }
