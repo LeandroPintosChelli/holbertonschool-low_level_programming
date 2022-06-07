@@ -8,18 +8,17 @@
  */
 int main(void)
 {
-	char az;
-	char e;
-	char q;
+	char az, e, q;
 
 	e = 'e'
 	q = 'q'
 
-	for (az = 'a' az <= 'z'; az++)
+	for (az = 'a'; az <= 'z'; az++)
 {
 	if (az != e && az != q)
 	putchar(az);
-	putchar('\n');
 }
+	putchar('\n');
+
 	return (0);
 }
