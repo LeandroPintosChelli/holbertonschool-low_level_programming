@@ -11,8 +11,8 @@ int main(void)
 	char az, x;
 
 	for (x = '0'; x <= '9'; x++)
-	for (az = 'a'; az <= 'f'; az++)
 	putchar(x);
+	for (az = 'a'; az <= 'f'; az++)
 	putchar(az);
 	putchar('\n');
 	return (0);
