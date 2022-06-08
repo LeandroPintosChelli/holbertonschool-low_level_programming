@@ -3,7 +3,7 @@
  *
  * Return: Always 0.
  */
-void print_alphabet(void)
+int print_alphabet(void)
 {
 	char x;
 
