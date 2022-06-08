@@ -13,7 +13,9 @@ char word[8] = "_putchar";
 int x;
 
 for (x = 0; x < 8; x++)
-	putchar(word[x]);
-	putchar('\n');
-	return (0);
+{
+putchar(word[x]);
+}
+putchar('\n');
+return (0);
 }
