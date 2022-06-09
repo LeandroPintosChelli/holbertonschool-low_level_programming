@@ -1,10 +1,7 @@
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include "main.h"
 /**
  * main - Entry point
- * It prints the word Holberton, followed by a new line.
+ * It prints the word _putchar, followed by a new line.
  * Return:  Always 0
  */
 int main(void)
