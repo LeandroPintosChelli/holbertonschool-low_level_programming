@@ -2,10 +2,10 @@
 #include "main.h"
 /**
  * _isalpha - check the code.
- * @c: lowercase
+ * @c: lowercase, uppercase
  * Return: Always 0.
  */
-int _isalpha(int c);
+int _isalpha(int c)
 {
 	char l, u;
 	int Letter = 0;
