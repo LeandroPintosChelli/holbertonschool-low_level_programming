@@ -5,7 +5,7 @@
  * @n: zero, greater, less
  * Return: Always 0.
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 int n;
 
@@ -23,4 +23,5 @@ int n;
 {
 	_putchar('-');
 	return ('-1');
+}
 }
