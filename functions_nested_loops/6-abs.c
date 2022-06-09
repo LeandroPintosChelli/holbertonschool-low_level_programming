@@ -11,6 +11,5 @@ int _abs(int);
 	{
 	if (abs >= 0)
 	return ('abs');
-	else
-	return ('abs * -1');
+	}
 }
