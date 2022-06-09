@@ -5,14 +5,14 @@
  * It prints the alphabet, in lowercase, followed by a new line.
  * Return: Always 0.
  */
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char az;
 
 for (az = 'a'; az <= 'z'; az++)
 {
-	_putchar(az);
-}
+_putchar(az);
 _putchar('\n');
+}
 return (0);
 }
