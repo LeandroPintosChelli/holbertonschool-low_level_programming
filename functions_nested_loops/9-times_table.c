@@ -10,12 +10,13 @@ int j, i, n;
 
 	for (i = 0; i <= 9; i++)
 	{
+		_putchar(',');
+		_putchar(' ');
 		for (j = 0; j <= 9; j++)
 		{
 			n = i * j;
 			if (j <= n - 1)
 			{
-				if (j != 0);
 			_putchar(i * j);
 			_putchar(',');
 			_putchar(' ');
