@@ -8,10 +8,10 @@ void times_table(void)
 {
 int j, i, n;
 
-	for (i = 1; i <= 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
 		n = i * j;
-		for (j = 1; j <= n; j++)
+		for (j = 0; j <= 9; j++)
 		{
 			if (j <= n - 1)
 			{
