@@ -9,13 +9,15 @@
  */
 int main(void)
 {
-char word[8] = "_putchar";
-int x;
-
-for (x = 0; x < 8; x++)
-{
-putchar(word[x]);
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
