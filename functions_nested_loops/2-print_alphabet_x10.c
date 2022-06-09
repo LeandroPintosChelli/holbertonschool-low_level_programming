@@ -17,5 +17,4 @@ _putchar(az);
 }
 i++;
 _putchar('\n');
-return ();
 }
