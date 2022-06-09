@@ -5,7 +5,7 @@
  * @int: absolute value of an integer
  * Return: Always 0.
  */
-int _abs(int);
+int _abs(int)
 {
 	if (int >= 0)
 	{
