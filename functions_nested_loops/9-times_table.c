@@ -10,9 +10,9 @@ int j, i, n;
 
 	for (i = 1; i <= 10; i++)
 	{
+		n = i * j;
 		for (j = 1; j <= n; j++)
 		{
-			n = i * j;
 			if (j <= n - 1)
 			{
 			_putchar(i * j);
