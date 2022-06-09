@@ -7,9 +7,6 @@
  */
 int _abs(int);
 {
-	int abs;
-	{
-	if (abs >= 0)
-	return ('abs');
-	}
+	if (int >= 0)
+	return ('int');
 }
