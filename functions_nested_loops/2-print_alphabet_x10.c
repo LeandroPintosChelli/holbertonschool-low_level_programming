@@ -11,9 +11,11 @@ int az, i;
 
 i = 0;
 while (i < 10)
+{
 for (az = 'a'; az <= 'z'; az++)
 {
 _putchar(az);
+}
 }
 i++;
 _putchar('\n');
