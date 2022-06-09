@@ -15,6 +15,7 @@ int j, i, n;
 			n = i * j;
 			if (j <= n - 1)
 			{
+				if (j != 0);
 			_putchar(i * j);
 			_putchar(',');
 			_putchar(' ');
