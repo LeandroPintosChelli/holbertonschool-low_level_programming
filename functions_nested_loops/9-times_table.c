@@ -6,13 +6,14 @@
  */
 void times_table(void)
 {
-int j, i;
+int j, i, n;
 
 	for (i = 1; i <= 10; i++)
 	{
-		for (j = 1; j <= 10; j++)
+		for (j = 1; j <= n; j++)
 		{
-			if (j <= 10 - 1)
+			n = i * j;
+			if (j <= n - 1)
 			{
 			_putchar(i * j);
 			_putchar(',');
