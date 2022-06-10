@@ -20,6 +20,6 @@ else
 	if (n % 5 == 0)
 		printf("Buzz");
 else
-	printf("%d", i);
+	printf("%d", n);
 }
 }
