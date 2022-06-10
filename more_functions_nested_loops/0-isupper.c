@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <ctype.h>
 /**
  * _isupper - check the code.
  * @c: uppercase
@@ -8,15 +9,14 @@
 int _isupper(int c)
 {
 	char upper;
-	int upper = 0;
+	int i = 0;
 
-	for (; upper <= 'z'; upper++)
+	for (upper = 'A'; upper <= 'Z'; upper++)
 	{
-			if (c == upper)
-			{
-					upper = 1;
-			}
+			if (upper == c)
+			i = 1;
 	}
-			return (upper);
-
+{
+			return (i);
+}
 }
