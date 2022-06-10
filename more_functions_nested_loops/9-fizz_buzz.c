@@ -23,5 +23,5 @@ int main(void)
 		printf("Fizz");
 	}
 	else
-	printf(n);
+	printf(int);
 }
