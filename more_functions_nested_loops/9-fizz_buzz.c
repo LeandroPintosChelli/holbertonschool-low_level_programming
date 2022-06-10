@@ -12,8 +12,7 @@ int n;
 for (n = 1; n < 101; n++)
 {
 if (n % 3 == 0 && n % 5 == 0)
-if (n != 100)
-printf(" ");
+if (n != 101)
 printf("FizzBuzz ");
 if (n % 3 == 0)
 printf("Fizz ");
