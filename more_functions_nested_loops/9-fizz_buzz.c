@@ -17,7 +17,7 @@ else
 if (n % 3 == 0)
 printf("Fizz");
 if (n != 100)
-	printf(32);
+printf(32);
 else
 if (n % 5 == 0)
 printf("Buzz");
