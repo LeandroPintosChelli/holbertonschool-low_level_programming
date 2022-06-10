@@ -15,7 +15,7 @@ _putchar(10);
 		{
 			_putchar(' ');
 		}
-		for (k = 1; k <= i; c++)
+		for (k = 1; k <= i; k++)
 		{
 			_putchar(35);
 		}
