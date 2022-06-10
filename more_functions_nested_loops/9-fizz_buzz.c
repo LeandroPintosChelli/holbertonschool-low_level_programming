@@ -13,7 +13,7 @@ for (n = 1; n <= 100; n++)
 {
 if (n % 3 == 0 && n % 5 == 0)
 if (n != 100)
-printf(32);
+printf(" ");
 printf("FizzBuzz");
 else
 if (n % 3 == 0)
