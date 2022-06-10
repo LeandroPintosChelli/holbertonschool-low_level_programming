@@ -22,6 +22,8 @@ int main(void)
 		if (n % 3)
 		printf("Fizz");
 	}
-	else
-	printf(int);
+	{
+		else
+		printf(int);
+	}
 }
