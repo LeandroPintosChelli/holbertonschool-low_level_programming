@@ -13,7 +13,7 @@ void rev_string(char *s)
 	while (*s != '\0')
 	{
 		s--;
-		i--;
+		i++;
 	}
 	while (i >= 0)
 	{
@@ -22,5 +22,4 @@ void rev_string(char *s)
 		if (*s != '\0')
 		_putchar(*s);
 	}
-	putchar('\n');
 }
