@@ -11,12 +11,11 @@ void print_rev(char *s)
 	char i = 0;
 
 	while (*s != '\0')
-		i--;
 	{
 		s++;
 		i++;
 	}
-	while (i >= 0)
+	while (i = 0)
 	{
 		_putchar(*s);
 		i--;
