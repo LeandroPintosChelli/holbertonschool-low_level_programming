@@ -8,7 +8,20 @@
  */
 void rev_string(char *s)
 {
-	int i, j, k;
+	int i, len, temp;
+
+	len = strlen(s);
+
+	if (i < len / 2)
+	{
+		temp = s[i];
+		s[i] = s[len - i - 1];
+		s[len - i - 1] = temp;
+		i++;
+		revstr(s);
+	}
+}
+/**	int i, j, k;
 
 	j = strj(s);
 
@@ -19,7 +32,7 @@ void rev_string(char *s)
 		s[j - i - 1] = k;
 	}
 }
-/**	int i = 0;
+	int i = 0;
 
 	while (*s != '\0')
 	{
