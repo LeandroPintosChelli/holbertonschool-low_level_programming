@@ -19,7 +19,7 @@ void print_rev(char *s)
 	{
 		i--;
 		s--;
-		if (*s != '\0');
+		if (*s != '\0')
 		_putchar(*s);
 	}
 	_putchar('\n');
