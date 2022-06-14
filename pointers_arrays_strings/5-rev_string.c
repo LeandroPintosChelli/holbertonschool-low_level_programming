@@ -18,7 +18,6 @@ void rev_string(char *s)
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = temp;
 		i++;
-		rev(s);
 	}
 }
 /**	int i, j, k;
