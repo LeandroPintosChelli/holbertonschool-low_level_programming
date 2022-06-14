@@ -18,7 +18,7 @@ void rev_string(char *s)
 	while (i >= 0)
 	{
 		s--;
-		i--;
+		i++;
 		if (*s != '\0')
 		_putchar(*s);
 	}
