@@ -19,4 +19,5 @@ void print_rev(char *s)
 		*i-- = *s;
 		*s++ = j;
 	}
+	return (0);
 }
