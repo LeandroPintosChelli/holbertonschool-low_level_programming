@@ -12,13 +12,13 @@ void rev_string(char *s)
 
 	while (*s != '\0')
 	{
-		s++;
-		i++;
+		s--;
+		i--;
 	}
 	while (i >= 0)
 	{
-		s--;
-		i--;
+		s++;
+		i++;
 		if (*s != '\0')
 		_putchar(*s);
 	}
