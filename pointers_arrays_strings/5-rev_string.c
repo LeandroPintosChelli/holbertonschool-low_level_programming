@@ -14,7 +14,6 @@ void rev_string(char *s)
 		i++;
 		s++;
 	}
-	return (i);
 }
 /**	int i, j, k;
 
