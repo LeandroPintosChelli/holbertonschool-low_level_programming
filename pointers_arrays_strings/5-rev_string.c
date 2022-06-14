@@ -22,6 +22,7 @@ void rev_string(char *s)
 		if (*s != '\0')
 	}
 	else
+	{
 		_putchar(*s);
 	}
 }
