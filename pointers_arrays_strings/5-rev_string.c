@@ -15,11 +15,11 @@ void rev_string(char *s)
 		s--;
 		i--;
 	}
-	while (i >= 0)
+/**	while (i >= 0)
 	{
 		s--;
 		i--;
 		if (*s != '\0')
 		_putchar(*s);
-	}
+	}*/
 }
