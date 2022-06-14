@@ -19,9 +19,8 @@ void rev_string(char *s)
 	{
 		s--;
 		i--;
-		if (*s != '\0')
 	}
-	else
+	if (*s != '\0')
 	{
 		_putchar(*s);
 	}
