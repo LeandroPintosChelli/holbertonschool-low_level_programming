@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
+#include <stddef.h>
 /**
  * _strcpy - check the code
  * @dest: a
@@ -9,7 +10,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	size_t n = strlen(str);
+	size_t n = 1;
 	size_t i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
