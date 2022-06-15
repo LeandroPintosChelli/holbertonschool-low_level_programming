@@ -5,11 +5,11 @@
  * _strcpy - check the code
  * @dest: a
  * @src: copies the string pointed
- * @n: sas
  * Return: Always 0.
  */
-char *_strcpy(char *dest, char *src, size_t n)
+char *_strcpy(char *dest, char *src)
 {
+	size_t n;
 	size_t i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
