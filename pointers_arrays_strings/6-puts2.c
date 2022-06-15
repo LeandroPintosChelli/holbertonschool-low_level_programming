@@ -2,8 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * rev_string - check the code
- * @s: Write a function that returns a string in reverse.
+ * puts2 - check the code
+ * @str: a function that prints every other character of a string
  * Return: Always 0.
  */
 void puts2(char *str)
