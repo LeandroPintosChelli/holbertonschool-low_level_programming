@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * puts2 - check the code
+ * puts_half - check the code
  * @str: a function that prints half of a character of a string
  * Return: Always 0.
  */
