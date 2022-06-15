@@ -9,7 +9,7 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-	size_t n = 0;
+	size_t n = strlen(str);
 	size_t i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
