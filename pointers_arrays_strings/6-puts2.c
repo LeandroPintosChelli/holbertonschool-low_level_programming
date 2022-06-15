@@ -8,10 +8,8 @@
  */
 void puts2(char *str)
 {
-	int i;
-
-	for (i = 0; *str != '\0'; i++)
-
-		str++;
-	_putchar('\n');
+	for (i = 0; str[i] != '\0' && i < strlen(str); i += 2)
+	{	_putchar(str[i]);
+		_putchar('\n');
+	}
 }
