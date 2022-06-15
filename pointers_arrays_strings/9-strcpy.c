@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * print_array - check the code
+ * _strcpy - check the code
  * @dest: a
  * @src: copies the string pointed
  * Return: Always 0.
