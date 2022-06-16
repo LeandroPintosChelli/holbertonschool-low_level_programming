@@ -5,7 +5,8 @@
 /**
  * _strncpy - check the code
  * @dest: a
- * @src: copies the string pointed
+ * @src: Write a function that copies a string
+ * @n: a
  * Return: Always 0.
  */
 char *_strncpy(char *dest, char *src, int n)
@@ -17,5 +18,5 @@ char *_strncpy(char *dest, char *src, int n)
 	for ( ; i < n; i++)
 	dest[i] = '\0';
 
-	return dest;
+	return (dest);
 }
