@@ -3,9 +3,10 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strcat - check the code
+ * _strncat - check the code
  * @dest: a
- * @src: copies the string pointed
+ * @src: concatenate the string pointed
+ * @n: n
  * Return: Always 0.
  */
 char *_strncat(char *dest, char *src, int n)
@@ -17,5 +18,5 @@ char *_strncat(char *dest, char *src, int n)
 	dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
 
-	return dest;
+	return (dest);
 }
