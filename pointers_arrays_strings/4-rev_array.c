@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strncpy - check the code
+ * reverse_array - check the code
  * @a: a
  * @n: Write a function that reverses the content of an array of integers.
  * Return: Always 0.
