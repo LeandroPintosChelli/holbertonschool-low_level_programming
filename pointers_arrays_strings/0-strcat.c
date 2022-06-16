@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stddef.h>
 /**
- *_strcpy - check the code
+ *_strcat - check the code
  * @dest: a
  * @src: copies the string pointed
  * Return: Always 0.
@@ -18,5 +18,5 @@ char *_strcat(char *dest, char *src)
 	dest[dest_len + i] = src[i];
 	dest[dest_len + i] = '\0';
 
-	return dest;
+	return (dest);
 }
