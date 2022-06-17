@@ -3,9 +3,9 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strspn - check the code
- * @accept: a
- * @s: Write a function that copies a string
+ * _strstr - check the code
+ * @needle: a
+ * @haystack: Write a function that copies a string
  * Return: Always 0.
  */
 char *_strstr(char *haystack, char *needle)
