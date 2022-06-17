@@ -16,7 +16,7 @@
 	printf("%d\n", len);
 	return (0);
 }*/
-int main(void)
+/**int main(void)
 {
 	char s1[98];
 	char *ptr;
@@ -50,4 +50,22 @@ int main(void)
 	}
 		printf("\n");
 		return (0);
+}*/
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char *s = "hello";
+    char *f;
+
+    f = _strchr(s, 'l');
+
+    if (f != NULL)
+    {
+        printf("%s\n", f);
+    }
+    return (0);
 }
