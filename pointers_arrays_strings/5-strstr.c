@@ -13,7 +13,7 @@ char *_strstr(char *haystack, char *needle)
 	while (*haystack)
 	{
 		char *i = haystack;
-		char *y = needle;
+		char *j = needle;
 
 		while (*haystack == *j && *j != 0 && *haystack != 0)
 		{
