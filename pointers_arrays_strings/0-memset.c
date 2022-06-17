@@ -3,7 +3,7 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strcpy - check the code
+ * _memset- check the code
  * @b: a
  * @n: Write a function that fills memory with a constant byte
  * @s: copies the string pointed
