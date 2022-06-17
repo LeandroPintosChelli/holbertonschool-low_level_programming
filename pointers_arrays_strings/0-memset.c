@@ -4,8 +4,9 @@
 #include <stddef.h>
 /**
  * _strcpy - check the code
- * @dest: a
- * @src: copies the string pointed
+ * @b: a
+ * @n: Write a function that fills memory with a constant byte
+ * @s: copies the string pointed
  * Return: Always 0.
  */
 char *_memset(char *s, char b, unsigned int n)
