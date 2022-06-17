@@ -3,9 +3,8 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strstr - check the code
- * @needle: a
- * @haystack: Write a function that copies a string
+ * print_chessboard - check the code
+ * @a:  Write a function that prints the chessboard.
  * Return: Always 0.
  */
 void print_chessboard(char (*a)[8])
