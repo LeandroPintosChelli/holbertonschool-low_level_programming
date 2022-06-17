@@ -3,8 +3,8 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * print_chessboard - check the code
- * @a: print_diagsums
+ * print_diagsums - check the code
+ * @a: prints the sum of the two diagonals of a square matrix of integers
  * @size: a
  * Return: Always 0.
  */
