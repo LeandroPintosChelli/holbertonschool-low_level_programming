@@ -4,7 +4,7 @@
 #include <stddef.h>
 /**
  * _strpbrk - check the code
- * @s: 
+ * @s: i
  * @accept: Write a function that gets the length of a prefix substring.
  * Return: Always 0.
  */
