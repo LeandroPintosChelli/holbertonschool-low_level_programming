@@ -3,10 +3,9 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strncpy - check the code
- * @dest: a
- * @src: Write a function that copies a string
- * @n: a
+ * _strspn - check the code
+ * @accept: a
+ * @s: Write a function that copies a string
  * Return: Always 0.
  */
 unsigned int _strspn(char *s, char *accept)
@@ -15,7 +14,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int j = 0;
 
 	while (*s)
-	{ 
+	{
 		for (i = 0; accept[i]; i++)
 		{
 			if (*s == accept[i])
@@ -24,7 +23,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		else if (accept[i + 1] == '\0')
-				return (j);
+			return (j);
 		}
 			s++;
 	}
