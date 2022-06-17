@@ -3,9 +3,10 @@
 #include <string.h>
 #include <stddef.h>
 /**
- * _strcpy - check the code
+ * _memcpy - check the code
  * @dest: a
  * @src: copies the string pointed
+ * @n: a
  * Return: Always 0.
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
