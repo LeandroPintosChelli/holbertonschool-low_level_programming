@@ -2,10 +2,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * _- check the code
- * @dest: a
- * @src: concatenate the string pointed
- * @n: n
+ * _strlen_recursion- check the code
+ * @s: function that returns the length of a string
  * Return: Always 0.
  */
 int _strlen_recursion(char *s)
