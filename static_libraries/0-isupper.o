@@ -1,2 +1,2 @@
-#!/bin/bash
-0000000000000000 T _isupper
+#include "main.h"
+int _isupper(int c);
