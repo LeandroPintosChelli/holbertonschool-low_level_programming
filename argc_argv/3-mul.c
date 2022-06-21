@@ -8,7 +8,7 @@
 */
 int main(int ac, char *av[])
 {
-	if (ac != 2)
+	if (ac != 3)
 	{
 		printf("Error\n");
 		return (1);
