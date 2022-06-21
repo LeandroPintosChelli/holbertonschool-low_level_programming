@@ -21,7 +21,7 @@ int main(int ac, char *av[])
 	{
 		for (j = 0; av[i][j]; j++)
 		{
-			if (isdigit(av[i][j] == 0))
+			if (isdigit(av[i][j]) == 0)
 			{
 				printf("Error\n");
 				return (1);
