@@ -5,7 +5,7 @@
 */
 int main(void)
 {
-	int ac = 1;
+	int ac = 0;
 
 	if (ac > 0)
 		printf("%d\n", ac - 1);
