@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <ctype.h>
 /**
-*
-*
-*
-*
+* main - program that adds positive numbers
+* @ac: int
+* @av: char
+* Return: Always 0
 */
 int main(int ac, char *av[])
 {
@@ -17,21 +17,7 @@ int main(int ac, char *av[])
 		return (0);
 	}
 	for (i = 1; i < ac; i++)
-	{/**
-		for (j = 0; av[i][j] != '\0'; j++)
-		{
-			if (isdigit(av[i][j]) == 0)
-			{
-				if (av[i][j] == '-' && av[i][j + 1] != '\0')
-					continue;
-				else
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-		}
-*/	}
+	
 	for (i = 1; i < ac; i++)
 		k = k + atoi(av[i]);
 	printf("%d\n", k);
