@@ -3,11 +3,8 @@
 * main - print a number
 * Return: Always 0
 */
-int main(void)
+int main(int ac, char *av[])
 {
-	int ac = 0;
-
-	if (ac > 0)
 		printf("%d\n", ac - 1);
 
 	return (0);
