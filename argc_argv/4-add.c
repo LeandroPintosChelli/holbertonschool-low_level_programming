@@ -10,6 +10,7 @@
 int main(int ac, char *av[])
 {
 	int i, k = 0;
+	int j;
 
 	if (ac < 2)
 	{
@@ -18,7 +19,9 @@ int main(int ac, char *av[])
 	}
 	for (i = 1; i < ac; i++)
 		{
-			if (!(isdigit(av[i] == 0)))
+		for (j = 0; av[i][j]; j++)
+		
+			if (isdigit(av[i] == 0))
 			{
 				printf("Error\n");
 				return (1);
