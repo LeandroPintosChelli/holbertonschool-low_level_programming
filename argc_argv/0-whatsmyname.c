@@ -3,12 +3,10 @@
 * main - print a name
 * Return: Always 0
 */
-int main(void)
+int main(int ac, char *av[])
 {
-	int i, j;
-
-	for (i = 0; i < j; i++)
-		printf("%d\n");
+	if (ac > 0)
+		printf("%s\n", av[0]);
 
 	return (0);
 }
