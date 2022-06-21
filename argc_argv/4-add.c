@@ -16,8 +16,8 @@ int main(int ac, char *av[])
 		printf("0\n");
 		return (0);
 	}
-	for (i = 1; i < ac; i++)
-	
+/**	for (i = 1; i < ac; i++)
+*/	
 	for (i = 1; i < ac; i++)
 		k = k + atoi(av[i]);
 	printf("%d\n", k);
