@@ -10,4 +10,5 @@ int main(void)
 	for (i = 0; i < j; i++)
 		printf("%s\n");
 
-	return(0);
+	return (0);
+}
