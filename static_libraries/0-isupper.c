@@ -2,17 +2,22 @@
 #include <stdio.h>
 
 /**
- * main - check the code.
- *
+ * _isupper - check the code.
+ * @c: uppercase
  * Return: Always 0.
  */
-int main(void)
+int _isupper(int c)
 {
-    char c;
+	char i;
+	int upper = 0;
 
-    c = 'A';
-    printf("%c: %d\n", c, _isupper(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isupper(c));
-    return (0);
+	for (i = 'A'; i <= 'Z'; i++)
+		{
+		if (i == c)
+			upper = 1;
+		}
+	{
+		return (upper);
+	}
+
 }

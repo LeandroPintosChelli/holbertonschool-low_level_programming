@@ -2,17 +2,21 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _isdigit - check the code.
+ * @c: is a digit
  * Return: Always 0.
  */
-int main(void)
+int _isdigit(int c)
 {
-    char c;
+char i;
+int digit = 0;
 
-    c = '0';
-    printf("%c: %d\n", c, _isdigit(c));
-    c = 'a';
-    printf("%c: %d\n", c, _isdigit(c));
-    return (0);
+	for (i = '0'; i <= '9'; i++)
+	{
+	if (i == c)
+	digit = 1;
+	}
+	{
+		return (digit);
+	}
 }

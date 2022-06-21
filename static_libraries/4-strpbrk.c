@@ -2,17 +2,25 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strpbrk - check the code
+ * @s: i
+ * @accept: Write a function that gets the length of a prefix substring.
  * Return: Always 0.
  */
-int main(void)
+char *_strpbrk(char *s, char *accept)
 {
-    char *s = "hello, world";
-    char *f = "world";
-    char *t;
+	int i;
 
-    t = _strpbrk(s, f);
-    printf("%s\n", t);
-    return (0);
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			return (s);
+		}
+
+		s++;
+	}
+
+	return ('\0');
 }

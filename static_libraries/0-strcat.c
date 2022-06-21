@@ -2,21 +2,19 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ *_strcat - check the code
+ * @dest: a
+ * @src: copies the string pointed
  * Return: Always 0.
  */
-int main(void)
+char *_strcat(char *dest, char *src)
 {
-    char s1[98] = "Hello ";
-    char s2[] = "World!\n";
-    char *ptr;
+	size_t dest_len = strlen(dest);
+	size_t i;
 
-    printf("%s\n", s1);
-    printf("%s", s2);
-    ptr = _strcat(s1, s2);
-    printf("%s", s1);
-    printf("%s", s2);
-    printf("%s", ptr);
-    return (0);
+	for (i = 0 ; src[i] != '\0'; i++)
+	dest[dest_len + i] = src[i];
+	dest[dest_len + i] = '\0';
+
+	return (dest);
 }

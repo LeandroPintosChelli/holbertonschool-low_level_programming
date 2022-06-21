@@ -1,22 +1,17 @@
 #include "main.h"
 
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
+int _isalpha(int c)
 {
-    int r;
+	char l, u;
+	int Letter = 0;
 
-    r = _isalpha('H');
-    _putchar(r + '0');
-    r = _isalpha('o');
-    _putchar(r + '0');
-    r = _isalpha(108);
-    _putchar(r + '0');
-    r = _isalpha(';');
-    _putchar(r + '0');
-    _putchar('\n');
-    return (0);
+	for (l = 'a'; l <= 'z'; l++)
+{
+	for (u = 'A'; u <= 'Z'; u++)
+{
+	if (c == l || c == u)
+	Letter = 1;
+}
+}
+	return (Letter);
 }

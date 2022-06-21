@@ -2,17 +2,24 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strcpy - check the code
+ * @dest: a
+ * @src: copies the string pointed
  * Return: Always 0.
  */
-int main(void)
+char *_strcpy(char *dest, char *src)
 {
-    char s1[98];
-    char *ptr;
+	int i;
+	int j = 0;
 
-    ptr = _strcpy(s1, "First, solve the problem. Then, write the code\n");
-    printf("%s", s1);
-    printf("%s", ptr);
-    return (0);
+	while (*(src + j) != '\0')
+	{
+	j++;
+	}
+
+	for (i = 0; i <= j; i++)
+	{
+	*(dest + i) = *(src + i);
+	}
+	return (dest);
 }

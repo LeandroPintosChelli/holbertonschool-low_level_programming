@@ -2,17 +2,30 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strspn - check the code
+ * @accept: a
+ * @s: Write a function that copies a string
  * Return: Always 0.
  */
-int main(void)
+unsigned int _strspn(char *s, char *accept)
 {
-    char *s = "hello, world";
-    char *f = "oleh";
-    unsigned int n;
+	int i;
+	unsigned int j = 0;
 
-    n = _strspn(s, f);
-    printf("%u\n", n);
-    return (0);
+	while (*s)
+	{
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+			{
+				j++;
+				break;
+			}
+		else if (accept[i + 1] == '\0')
+			return (j);
+		}
+			s++;
+	}
+
+	return (j);
 }

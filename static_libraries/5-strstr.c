@@ -2,17 +2,26 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strstr - check the code
+ * @needle: a
+ * @haystack: Write a function that copies a string
  * Return: Always 0.
  */
-int main(void)
+char *_strstr(char *haystack, char *needle)
 {
-    char *s = "hello, world";
-    char *f = "world";
-    char *t;
+	while (*haystack)
+	{
+		char *i = haystack;
+		char *j = needle;
 
-    t = _strstr(s, f);
-    printf("%s\n", t);
-    return (0);
+		while (*haystack == *j && *j != 0 && *haystack != 0)
+		{
+			haystack++;
+			j++;
+		}
+		if (*j == 0)
+			return (i);
+		haystack = ++i;
+	}
+	return (0);
 }

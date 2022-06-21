@@ -2,20 +2,20 @@
 #include <stdio.h>
 
 /**
- * main - check the code
- *
+ * _strchr - check the code
+ * @s: d
+ * @c: Write a function that locates a character in a string.
  * Return: Always 0.
  */
-int main(void)
+char *_strchr(char *s, char c)
 {
-    char *s = "hello";
-    char *f;
+	int i = 0;
 
-    f = _strchr(s, 'l');
+	while (s[i] != '\0' && s[i] != c)
+	i++;
 
-    if (f != NULL)
-    {
-        printf("%s\n", f);
-    }
-    return (0);
+	if (s[i] == c)
+		return (&s[i]);
+	else
+		return (NULL);
 }
