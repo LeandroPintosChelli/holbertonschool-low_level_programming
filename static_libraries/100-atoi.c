@@ -7,7 +7,6 @@
  * Return: Always 0.
  */
 int _atoi(char *s)
-int main(void)
 {
     int nb;
 

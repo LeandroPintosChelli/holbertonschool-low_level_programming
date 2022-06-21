@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
-
+#include <string.h>
+#include <stddef.h>
 /**
  * _strncat - check the code
  * @dest: a
