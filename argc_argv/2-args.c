@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
-*
-*
-*
-*
+* main - print all arguments
+* @ac: intenger
+* @av: char
+* Return: Always 0
 */
 int main(int ac, char *av[])
 {
