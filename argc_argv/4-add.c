@@ -18,7 +18,7 @@ int main(int ac, char *av[])
 	}
 	for (i = 1; i < ac; i++)
 		{
-			if (!(isalpha(av[i] == 0)))
+			if (isalpha(av[i] == 0))
 			{
 				printf("Error\n");
 				return (1);
