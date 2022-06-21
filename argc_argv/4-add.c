@@ -18,9 +18,9 @@ int main(int ac, char *av[])
 		return (0);
 	}
 	for (i = 1; i < ac; i++)
-		{
+	{
 		for (j = 0; av[i][j]; j++)
-		
+		{
 			if (isdigit(av[i] == 0))
 			{
 				printf("Error\n");
@@ -28,6 +28,7 @@ int main(int ac, char *av[])
 			}
 		}
 		k = k + atoi(av[i]);
+	}
 	printf("%d\n", k);
 	return (0);
 }
