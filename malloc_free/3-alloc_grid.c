@@ -22,6 +22,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
+	a = (char *)malloc(*b + *c + 1);
 	for (width = 0; width < i; width++)
 	{
 		a[width] = b[width];
