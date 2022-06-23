@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* str_concat - chek code
+* str_concat - check code
 * @s1: a
 * @s2: b
 * Always Return 0
@@ -12,8 +12,8 @@ char *str_concat(char *s1, char *s2)
 {
 	int i, j;
 	char *c;
-	char a = strlen(s1);
-	char b = strlen(s2);
+	int a = strlen(s1);
+	int b = strlen(s2);
 
 	if (s1 == NULL)
 	{
