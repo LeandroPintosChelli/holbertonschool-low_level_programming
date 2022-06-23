@@ -3,9 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-*
-*
-*
+* str_concat - chek code
+* @s1: a
+* @s2: b
+* Always Return 0
 */
 char *str_concat(char *s1, char *s2)
 {
