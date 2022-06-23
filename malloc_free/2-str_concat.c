@@ -28,6 +28,10 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
+	if (c == NULL)
+	{
+		return (s1);
+	}
 	for (i = 0; s1[i]; i++)
 	{
 		c[i] = s1[i];
