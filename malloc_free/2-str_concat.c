@@ -9,12 +9,11 @@
 */
 char *str_concat(char *s1, char *s2)
 {
-	int i, j, k;
+	int i, j, k = 0 ;
 	char *c;
 
 	i = strlen(s1);
 	j = strlen(s2);
-	k = 0;
 
 	c = (char *)malloc(k * sizeof(char) + 1);
 
@@ -28,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 	}
 	for (j = 0; j < k; j++)
 	{
-		return (s1);
+		return (NULL);
 	}
-	return (NULL);
+	return (0);
 }
