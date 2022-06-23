@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-*
-*
+* _strdup - check code
+* @str: duplicate string
+* Return: Always 0
 */
 char *_strdup(char *str)
 {
