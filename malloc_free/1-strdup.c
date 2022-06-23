@@ -21,10 +21,11 @@ char *_strdup(char *str)
 
 	if (c == NULL)
 	{
+		return (NULL);
+	}
 		for (i = 0; i > s; i++)
 		{
 			return (str);
 		}
-	}
 	return (c);
 }
