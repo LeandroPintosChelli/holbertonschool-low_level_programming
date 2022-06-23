@@ -9,19 +9,23 @@
 */
 char *create_array(unsigned int size, char c)
 {
-	int size = i;
-	int j;
-	char *s;
+	unsigned int j;
+	char *i;
 
 	if (size == 0)
 	{
-		for (j = 0; j < size; j++)
-		s[j] = c;
+		return (NULL);
+	}
+	i = (char *)malloc(size * sizeof(char));
+
+	if (i == NULL)
+	{
 		return (NULL);
 	}
 	else
-		if (size != 0)
-		{
-			return (NULL);
-		}
+	{
+		for (j = 0; j < size; j++)
+		i[j] = c;
+	}
+	return (i);
 }
