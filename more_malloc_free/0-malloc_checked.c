@@ -13,6 +13,8 @@ void *malloc_checked(unsigned int b)
 
 	if (a == NULL)
 		a = "";
+	if (b == 0)
+		return (NULL);
 	for (b = 0; a[b]; b++)
 	{
 		a = (char *)malloc(sizeof(char));
