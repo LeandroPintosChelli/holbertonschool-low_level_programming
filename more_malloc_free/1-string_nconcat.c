@@ -26,5 +26,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		a[n] = s2[b];
 	}
-	return (NULL);
+	return (a);
 }
