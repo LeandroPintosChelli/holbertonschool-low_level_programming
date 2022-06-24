@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 	return malloc(width * height * sizeof(int));
-	c = (char *)malloc(sizeof(char) * ((a + b) + 1));
+/**	c = (char *)malloc(sizeof(char) * ((a + b) + 1));*/
 	if (c == NULL)
 		return (NULL);
 	for (width = 0; width <= a; width++)
