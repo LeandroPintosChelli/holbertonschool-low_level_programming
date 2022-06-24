@@ -18,8 +18,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (size == 0)
 		return (NULL);
 
-	x = calloc(sizeof(char) * ((nmemb + size) + 1));
-
+	x = (char *)malloc(sizeof(char) * ((nmemb + size) + 1));
+	free(0);
 	if (x == NULL)
 	{
 		return (NULL);
