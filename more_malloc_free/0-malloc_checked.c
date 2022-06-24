@@ -9,16 +9,15 @@
 */
 void *malloc_checked(unsigned int b)
 {
-	char *a = 0;
+	unsigned int *a = 0;
 
 	if (a == NULL)
-		a = "";
+		return (NULL);
 	if (b == 0)
 		return (NULL);
-	a = (char *)malloc(sizeof(char) * b);
 	for (b = 0; a[b]; b++)
 	{
-		a = (char *)malloc(sizeof(char) * b);
+		a = malloc(sizeof(int) * b);
 		return (NULL);
 	}
 	return (a);
