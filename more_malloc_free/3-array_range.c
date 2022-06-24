@@ -3,9 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* _calloc - check code
-* @nmemb: int
-* @size: int
+* array_range- check code
+* @min: int
+* @max: int
 * Return: Always 0
 */
 int *array_range(int min, int max)
@@ -19,7 +19,7 @@ int *array_range(int min, int max)
 	j = (max - min) + 1;
 	x = malloc(sizeof(int) * j);
 
-	if (x ==NULL)
+	if (x == NULL)
 		return (NULL);
 	for (i = 0; i < j; i++)
 	{
