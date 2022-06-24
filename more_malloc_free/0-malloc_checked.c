@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 
 	for (b = 0; a[b]; b++)
 	{
-		a =(char *)malloc(sizeof(char) * b);
+		a = (char *)malloc(sizeof(char) * b);
 	}
 	return (a);
 	exit(98);
