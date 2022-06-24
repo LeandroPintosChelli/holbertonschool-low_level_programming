@@ -19,7 +19,6 @@ void *malloc_checked(unsigned int b)
 	{
 		a = (char *)malloc(sizeof(char) * b);
 		return (NULL);
-		exit(98);
 	}
 	return (a);
 }
