@@ -32,5 +32,5 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		a[n + i] = s2[i];
 	}
-	return (0);
+	return (a);
 }
