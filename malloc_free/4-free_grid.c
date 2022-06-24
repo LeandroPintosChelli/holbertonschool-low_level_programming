@@ -3,8 +3,8 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-* alloc_grid - check code
-* @width: string
+* free_grid - check code
+* @grid: bidimensional
 * @height: s
 * Return: Always 0
 */
