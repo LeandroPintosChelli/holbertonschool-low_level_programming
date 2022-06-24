@@ -11,23 +11,22 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
-	char *x;
-
+	int *a;
 	if (nmemb == 0)
 		return (NULL);
 	if (size == 0)
 		return (NULL);
 
-	x = (char *)malloc(sizeof(char) * ((nmemb + size) + 1));
-	free(0);
-	if (x == NULL)
+	a = (int *)malloc(sizeof(int) * ((nmemb + size) + 1));
+
+	if (a == NULL)
 	{
-		return (NULL);
+		return (0);
 	}
 	for (i = 0; i < size; i++)
 	{
-		x[nmemb] = x[size];
+		a[nmemb] = a[size];
 		size++;
 	}
-	return (x);
+	return (NULL);
 }
