@@ -23,8 +23,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	a = (char *)malloc(sizeof(char) * ((*s1 + *s2) + 1));
 	if (a == NULL)
 		return (NULL);
-	if (n <= b)
-		return (s2);
 	for (n = 0; s2[b]; n++)
 	{
 		a[n] = s2[b];
