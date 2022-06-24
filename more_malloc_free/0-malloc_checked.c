@@ -15,6 +15,7 @@ void *malloc_checked(unsigned int b)
 		a = "";
 	if (b == 0)
 		return (NULL);
+	a = (char *)malloc(sizeof(char) * b);
 	for (b = 0; a[b]; b++)
 	{
 		a = (char *)malloc(sizeof(char) * b);
