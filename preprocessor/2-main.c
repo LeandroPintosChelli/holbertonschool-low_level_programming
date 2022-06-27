@@ -6,6 +6,6 @@
 int main(void)
 {
 printf(__FILE__);
-printf("\n")
+printf("\n");
 return (0);
 }
