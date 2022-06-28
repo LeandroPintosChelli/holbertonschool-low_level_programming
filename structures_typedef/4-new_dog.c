@@ -24,10 +24,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *firulais;
 
-	if (name == NULL ||age < 0 || owner == NULL)
+	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
-	firulais = malloc(sizeof(dog_t);
+	firulais = malloc(sizeof(dog_ti));
 	if (firulais ==  NULL)
 		return (NULL);
 }
