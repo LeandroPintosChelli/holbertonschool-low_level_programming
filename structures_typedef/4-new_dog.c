@@ -10,9 +10,9 @@ int _strlen(char *str)
 {
 	int count = 0;
 
-	for (count = 0; str[count]; count++)
+	for (count = 0; *(str + count); count++)
 		return (count);
-};
+}
 /**
 * new_dog - check code
 * @name: char
