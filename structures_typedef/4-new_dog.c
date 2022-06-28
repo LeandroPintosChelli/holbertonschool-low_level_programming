@@ -22,7 +22,7 @@ int _strlen(char *str)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int lenname, lenowner, i, j;
+	int lename, lenowner, i, j;
 
 	dog_t *p;
 
@@ -30,12 +30,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		if (p == NULL)
 			return (NULL);
 
-	lenname = _strlen(name);
+	lename = _strlen(name);
 	lenowner = _strlen(owner);
 
-	p->name = malloc(lenname + 1);
+	p->name = malloc(lename + 1);
 		if (p->name == NULL)
-		free(p->lenname);
+		free(p->lename);
 		free(p);
 		return (NULL);
 
@@ -47,7 +47,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 p->age = age;
 
-		for (i < 0; i < lenname; i++)
+		for (i < 0; i < lename; i++)
 		{
 			p->name[i] = name [i];
 		}
