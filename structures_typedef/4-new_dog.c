@@ -10,7 +10,7 @@ int _strlen(char *str)
 {
 	int count = 0;
 
-	for (count = 0; *(str + count); count++)
+	for (count = 0; str[count]; count++)
 		return (count);
 }
 /**
@@ -22,17 +22,40 @@ int _strlen(char *str)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *firulais;
+	int lenname, lenowner, i, j:
 
-	firulais = malloc(sizeof(dog_t));
-	if (firulais ==  NULL)
-		return (NULL);
-	firulais->age = age
+	dog_t *p;
 
-	if (name != NULL)
-		{
-			free(firulais);
+	p = malloc(sizeof(dog_t));
+		if (p == NULL)
 			return (NULL);
+
+	lenname = _strlen(name);
+	lenowner = _strlen(owner);
+
+	p->name = malloc(lenname + 1);
+		if (p->name == NULL)
+		free(p->lenname);
+		free(p);
+		return (NULL);
+
+	p->owner = malloc(lenowner + 1);
+		if (p->owner == NULL)
+		free(p->name);
+		free(p->owner);
+		free(p);
+		return (NULL);
+p->age = age;
+
+		for (i < 0; i < lenname; i++)
+		{
+			p->name[i] = name [i];
 		}
-	firulais->name = (name)
+		p->name = '\0';
+		for (j < 0; j < lenowner; j++)
+		{
+			p->owner[j] = owner[j];
+		}
+		p->owner = '\0';
+	return(p);
 }
