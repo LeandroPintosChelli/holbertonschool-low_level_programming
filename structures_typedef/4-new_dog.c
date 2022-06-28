@@ -22,7 +22,7 @@ int _strlen(char *str)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int lenname, lenowner, i, j:
+	int lenname, lenowner, i, j;
 
 	dog_t *p;
 
