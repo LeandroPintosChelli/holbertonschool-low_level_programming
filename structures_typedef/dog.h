@@ -1,3 +1,6 @@
+/**
+* dog - define new type
+*/
 struct dog
 {
 char *name;
