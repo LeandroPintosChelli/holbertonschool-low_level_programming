@@ -1,7 +1,10 @@
 #ifndef DOG
 #define DOG
 /**
-*struct dog - define new type
+* struct dog - define new type
+* @name: name
+* @age: age
+* @owner: owner
 */
 struct dog
 {
