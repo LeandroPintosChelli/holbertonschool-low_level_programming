@@ -1,5 +1,5 @@
-#ifndef dog
-#define dog
+#ifndef DOG
+#define DOG
 /**
 * dog - define new type
 */
