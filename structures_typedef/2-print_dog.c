@@ -1,8 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
 /**
-*
-*
+* print_dog - check code
+* @d: struct
 */
 void print_dog(struct dog *d)
 {
