@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
 * init_dog - define new type
-* @name: name
+* @d: char
 * @age: age
 * @owner: owner
 */
