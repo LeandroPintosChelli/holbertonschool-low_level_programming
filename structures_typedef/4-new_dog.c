@@ -6,12 +6,16 @@
 * @str: char
 * Return: Always 0
 */
-int _strlen(char *str)
+int _strlen(char *s)
 {
-	int count = 0;
-
-	for (count = 0; str[count]; count++)
-		return (count);
+int count;
+count = 0;
+while (*s != '\0')
+	{
+	count++;
+	s++;
+	}
+return (count);
 }
 /**
 * new_dog - check code
