@@ -1,7 +1,7 @@
 #include "dog.h"
 #include <stdio.h>
-#ifndef DOG_H
-#define DOG_H
+#ifndef init_dog
+#define init_dog
 /**
 * struct dog - define new type
 * @name: name
