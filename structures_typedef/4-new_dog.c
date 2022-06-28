@@ -12,7 +12,7 @@ int _strlen(char *str)
 
 	for (count = 0; str[count]; count++)
 		return (count);
-}
+};
 /**
 * new_dog - check code
 * @name: char
