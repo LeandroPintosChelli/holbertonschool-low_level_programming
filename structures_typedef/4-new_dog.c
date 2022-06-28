@@ -28,7 +28,6 @@ return (count);
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	int lename, lenowner, i, j;
-
 	dog_t *p;
 
 	p = malloc(sizeof(dog_t));
@@ -38,6 +37,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		}
 	lename = _strlen(name);
 	lenowner = _strlen(owner);
+
 	p->name = malloc(lename + 1);
 		if (p->name == NULL)
 		{
@@ -48,8 +48,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	p->owner = malloc(lenowner + 1);
 		if (p->owner == NULL)
 		{
-			free(p->name);
 			free(p->owner);
+			free(p->name);
 			free(p);
 			return (NULL);
 		}
