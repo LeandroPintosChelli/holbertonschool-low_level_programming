@@ -8,6 +8,5 @@
 */
 void print_name(char *name, void (*f)(char *))
 {
-	printf("Calling %s()\n", name);
-		f(name);
+	f(name);
 }
