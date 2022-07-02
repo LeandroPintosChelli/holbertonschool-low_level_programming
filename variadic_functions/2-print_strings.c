@@ -2,9 +2,10 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
-*
-*
-*
+* print_strings - check code
+* @separator; commas
+* @n: numbers
+* Return: Always 0
 */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
@@ -19,7 +20,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		s = va_arg(string, char *);
 
 		if (s == NULL)
-			printf( "(nil)");
+			printf("(nil)");
 		else
 			printf("%s", s);
 
