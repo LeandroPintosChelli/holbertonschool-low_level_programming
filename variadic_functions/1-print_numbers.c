@@ -2,17 +2,17 @@
 #include <stdio.h>
 #include <stdarg.h>
 /**
-*
-*
-*
-*
+* print_numbers - check code
+* @separator: commas
+* @n: numbers
+* Return: 0
 */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list nums;
 	unsigned int i;
 
-	va_start (nums, n);
+	va_start(nums, n);
 
 	for (i = 0; i < n; i++)
 	{
