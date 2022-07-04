@@ -50,7 +50,7 @@ void print_string(va_list all)
 void print_all(const char * const format, ...)
 {
 	va_list all;
-	char *sep;
+	char *sep = "";
 	int i, j;
 
 	todo_t lett[] = { {'c', print_char},
@@ -67,8 +67,8 @@ void print_all(const char * const format, ...)
 		{
 			if(lett[j].print == format[i])
 			{
-				lett[j].f(all);
 				printf("%s", sep);
+				lett[j].f(all);
 				sep = ", ";
 			}
 			j++;
