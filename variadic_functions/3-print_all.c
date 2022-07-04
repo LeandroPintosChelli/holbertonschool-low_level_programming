@@ -53,10 +53,10 @@ void print_all(const char * const format, ...)
 	char *sep;
 	int i, j;
 
-	todo_t lett[] = { {"c", print_char},
-			  {"i", print_integer},
-			  {"f", print_float},
-			  {"s", print_string},
+	todo_t lett[] = { {'c', print_char},
+			  {'i', print_integer},
+			  {'f', print_float},
+			  {'s', print_string},
 			  {NULL, NULL} };
 
 	va_start(all, format);
