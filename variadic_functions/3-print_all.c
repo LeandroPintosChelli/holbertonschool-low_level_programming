@@ -51,7 +51,7 @@ void print_all(const char * const format, ...)
 {
 	va_list all;
 	char *sep = "";
-	int i, j;
+	int i, j = 0;
 
 	todo_t lett[] = { {'c', print_char},
 			  {'i', print_integer},
