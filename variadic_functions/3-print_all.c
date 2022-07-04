@@ -61,11 +61,11 @@ void print_all(const char * const format, ...)
 
 	va_start(all, format);
 
-	while(format[i] != '\0' && format != NULL)
+	while (format[i] != '\0' && format != NULL)
 	{
-		while(lett[j].print != '\0')
+		while  (lett[j].print != '\0')
 		{
-			if(lett[j].print == format[i])
+			if (lett[j].print == format[i])
 			{
 				printf("%s", sep);
 				lett[j].f(all);
