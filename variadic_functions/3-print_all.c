@@ -67,7 +67,7 @@ void print_all(const char * const format, ...)
 		{
 			if(lett[j].print == format[i])
 			{
-				lett[j].f(va_list);
+				lett[j].f(all);
 				printf("%s", sep);
 				sep = ", ";
 			}
@@ -76,7 +76,7 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(all);
-	printf('\n');
+	printf("\n");
 }
 
 
