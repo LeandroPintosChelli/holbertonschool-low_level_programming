@@ -3,32 +3,32 @@
 #include <stdlib.h>
 #include <stdarg.h>
 /**
-* _char - check code
-* @: const
+* print_char - check code
+* @all: const
 */
 void print_char(va_list all)
 {
 	printf("%c", va_arg(all, int));
 }
 /**
-*
-*
+* print_integer - check code
+* @all: print
 */
 void print_integer(va_list all)
 {
 	printf("%i", va_arg(all, int));
 }
 /**
-*
-*
+* print_float - check code
+* @all: print
 */
 void print_float(va_list all)
 {
 	printf("%f", va_arg(all, double));
 }
 /**
-*
-*
+* print_string - check code
+* @all: print
 */
 void print_string(va_list all)
 {
@@ -45,8 +45,8 @@ void print_string(va_list all)
 
 }
 /**
-*
-*
+* print_all - print va_list
+* @format: print
 */
 void print_all(const char * const format, ...)
 {
