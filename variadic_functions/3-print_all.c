@@ -49,16 +49,49 @@ void print_string(va_list all)
 */
 void print_all(const char * const format, ...)
 {
-	int i;
-
 	va_list all;
 	char *sep;
+	int i, j;
 
-	todo_t lett[] = {
-	{"c", print_char},
-	{"i", print_integer},
-	{"f", print_float},
-	{"s", print_string},
-	{NULL, NULL}
-	};
+	todo_t lett[] = { {"c", print_char},
+			  {"i", print_integer},
+			  {"f", print_float},
+			  {"s", print_string},
+			  {NULL, NULL} };
+
+	va_start(all, format);
+
+	while(format[i] != '\0')
+	{
+		while(lett[j].print != NULL)
+		{
+			if(lett[j].print == format[i]);
+			{
+				lett[j].f(va_list);
+				printf("%s", sep);
+				sep = ", ";
+			}
+			j++;
+		}
+		i++;
+	}
+	va_end(all);
+	printf('\n');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
 }
