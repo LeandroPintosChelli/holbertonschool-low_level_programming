@@ -6,11 +6,11 @@ RM = rm -f
 
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
+	$(CC) $(OBJ) -o holberton
 clean:
 	$(RM) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
 fclean:
 	$(RM) *~ $(NAME) $(OBJ)
-re: all
+re: oclean all
