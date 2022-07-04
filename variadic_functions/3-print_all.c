@@ -40,7 +40,7 @@ void print_string(va_list all)
 		printf("(nil)");
 		return;
 	}
-	printf("%s", s)
+	printf("%s", s);
 
 }
 /**
