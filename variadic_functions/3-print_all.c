@@ -65,7 +65,7 @@ void print_all(const char * const format, ...)
 	{
 		while(lett[j].print != '\0')
 		{
-			if(lett[j].print == format[i]);
+			if(lett[j].print == format[i])
 			{
 				lett[j].f(va_list);
 				printf("%s", sep);
