@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-*
-*
+* print_number - check code
+* @n: print number
 */
 void print_number(int n)
 {
@@ -12,9 +12,9 @@ void print_number(int n)
 		_putchar('-');
 		num = -num;
 	}
-		num ((num / 10) > 0)
 
-	if (num != 0)
+	if ((num / 10) > 0)
+
 		print_number(num);
 
 	_putchar((num % 10) + '\0');
