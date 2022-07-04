@@ -57,13 +57,13 @@ void print_all(const char * const format, ...)
 			  {'i', print_integer},
 			  {'f', print_float},
 			  {'s', print_string},
-			  {NULL, NULL} };
+			  {'\0', NULL} };
 
 	va_start(all, format);
 
 	while(format[i] != '\0')
 	{
-		while(lett[j].print != NULL)
+		while(lett[j].print != '\0')
 		{
 			if(lett[j].print == format[i]);
 			{
