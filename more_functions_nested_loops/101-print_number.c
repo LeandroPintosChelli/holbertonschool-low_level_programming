@@ -24,7 +24,7 @@ void _numbers(unsigned int n)
 {
 	if (n / 10 != 0)
 	{
-		_numbers(n / 10);	
+		_numbers(n / 10);
 	}
 	_putchar((n % 10) + '0');
 }
