@@ -7,7 +7,7 @@
 */
 size_t print_list(const list_t *h)
 {
-	int count = 0;
+	unsigned int count = 0;
 	const list_t *ct = h;
 
 	for (; ct; ct = ct->link)
