@@ -2,11 +2,14 @@
 #define MAIN_H
 #include <stddef.h>
 /**
+* struct node - singly linked list
+* @str: string
+* @lenght: lenght of a string
 *
-*
-*
+* Description: singly linked list node structure
 */
-typedef struct node {
+typedef struct node
+{
 	char *str;
 	unsigned int lenght;
 	struct node *link;
