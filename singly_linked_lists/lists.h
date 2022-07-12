@@ -6,7 +6,7 @@
 *
 *
 */
-struct node {
+typedef struct node {
 	char *str;
 	unsigned int lenght;
 	struct node *link;
