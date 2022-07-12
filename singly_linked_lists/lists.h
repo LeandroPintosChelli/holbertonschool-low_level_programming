@@ -8,7 +8,7 @@
 *
 * Description: singly linked list node structure
 */
-typedef struct node_s
+typedef struct list_s
 {
 	char *str;
 	unsigned int lenght;
