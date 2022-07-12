@@ -4,7 +4,7 @@
 /**
 * struct node - singly linked list
 * @str: string
-* @lenght: lenght of a string
+* @len: lenght of a string
 *
 * Description: singly linked list node structure
 */
