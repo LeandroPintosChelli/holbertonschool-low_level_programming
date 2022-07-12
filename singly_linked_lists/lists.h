@@ -13,6 +13,4 @@ typedef struct node {
 } list_t;
 size_t print_list(const list_t *h);
 int _putchar(char c);
-
-
 #endif
