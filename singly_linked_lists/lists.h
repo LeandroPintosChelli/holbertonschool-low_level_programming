@@ -8,11 +8,11 @@
 *
 * Description: singly linked list node structure
 */
-typedef struct list_s
+typedef struct node
 {
 	char *str;
 	unsigned int lenght;
-	struct list_s *next;
+	struct node *next;
 } list_t;
 size_t print_list(const list_t *h);
 #endif
