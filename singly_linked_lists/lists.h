@@ -15,6 +15,4 @@ typedef struct node
 	struct node *link;
 } list_t;
 size_t print_list(const list_t *h);
-
-
 #endif
