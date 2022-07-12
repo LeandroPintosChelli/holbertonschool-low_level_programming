@@ -16,7 +16,6 @@ size_t print_list(const list_t *h)
 	{
 	while (str == NULL)
 	{
-		link = link
 		printf("[0] (nil)");
 	}
 	count++;
