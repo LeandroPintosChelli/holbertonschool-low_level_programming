@@ -5,7 +5,7 @@
 * struct node - singly linked list
 * @str: string
 * @len: lenght of a string
-*
+* @next: next nodo
 * Description: singly linked list node structure
 */
 typedef struct node
