@@ -13,6 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newlist;
 	newlist = malloc(sizeof(list_t));
+	struct node *newNode = malloc(sizeof(struct node));
 
 	while (head->next != NULL)
 	{
