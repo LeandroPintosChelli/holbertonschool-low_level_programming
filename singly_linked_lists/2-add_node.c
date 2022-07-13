@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* add_node - agrega nodo al inicio
+* *add_node - agrega nodo al inicio
 * @head: head
 * @str: string
 */
