@@ -12,12 +12,12 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *newlist;
-
+	list_t *head2;
 	newlist = malloc(sizeof(list_t));
 
 	if (newlist != NULL)
 	{
-		head->str = newlist;
+		head2->newlist = strdup(str);
 		newlist->len = strlen(str);
 		newlist->str = strdup(str);
 		newlist->next = (*head);
