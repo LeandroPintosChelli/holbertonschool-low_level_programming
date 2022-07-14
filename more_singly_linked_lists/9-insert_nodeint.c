@@ -7,7 +7,7 @@
 * insert_nodeint_at_index - insert a new node in a given position
 * @head: head
 * @idx: unsigned int
-+@n: int
+* @n: int
 * Return: *head
 */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
