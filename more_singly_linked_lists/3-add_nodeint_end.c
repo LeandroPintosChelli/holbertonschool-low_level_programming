@@ -20,7 +20,6 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		return (0);
 	}
 
-		newlist->n = strdup(n);
 		newlist->len = strlen(n);
 		newlist->next = NULL;
 
