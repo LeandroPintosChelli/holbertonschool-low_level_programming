@@ -12,7 +12,7 @@
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *newlist;
-	int *strcp = strdup(n);
+	int *strcp;
 
 	newlist = malloc(sizeof(listint_t));
 
