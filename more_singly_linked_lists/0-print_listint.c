@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
-* print_list - Print lists
+* print_listint - Print lists
 * @h: list
 * Return: count
 */
@@ -12,9 +12,9 @@ size_t print_listint(const listint_t *h)
 
 	for (; ct; ct = ct->next)
 	{
-	if (ct->str)
+	if (ct->n)
 	{
-	printf("[%u] %s", ct->len, ct->str);
+	printf("[%u] %s", ct->len, ct->n);
 	}
 	else
 	{
