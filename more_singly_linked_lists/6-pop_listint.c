@@ -10,7 +10,7 @@
 */
 int pop_listint(listint_t **head)
 {
-	struct listint_t n;
+	struct listint_t n = (*head);
 
 	if (!head)
 	{
