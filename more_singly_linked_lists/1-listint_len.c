@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* list_len - count number of elements
+* listint_len - count number of elements
 * @h: list pointer
 * Return: count
 */
