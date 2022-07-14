@@ -18,7 +18,6 @@ listint_t *add_nodeint(listint_t **head, const int n)
 
 	if (newlist != NULL)
 	{
-		newlist->n = strcp;
 		newlist->len = strlen(n);
 		newlist->next = (*head);
 		(*head) = newlist;
