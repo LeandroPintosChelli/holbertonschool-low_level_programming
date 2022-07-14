@@ -1,16 +1,15 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
- * free_listint - free list
+ * free_listint2 - free list
  * @head: free list_t
  * Return: void
  */
 void free_listint2(listint_t **head)
 {
-	while (head)
+	while (*head->next)
 	{
 		head = NULL;
-		free(n);
-		free(head);
+		free(*head);
 	}
 }
