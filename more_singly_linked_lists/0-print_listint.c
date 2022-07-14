@@ -14,7 +14,7 @@ size_t print_listint(const listint_t *h)
 	{
 	if (ct->n)
 	{
-	printf("[%u]", ct->n);
+	printf("%u", ct->n);
 	}
 	else
 	{
