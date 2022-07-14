@@ -4,20 +4,22 @@
 #include <string.h>
 #include <stdio.h>
 /**
-* pop_listint_end - agrega nodo al final
+* pop_listint - agrega nodo al final
 * @head: head
 * Return: *head
 */
 int pop_listint(listint_t **head)
 {
-	if (!head)
+	int k;
+	listint_t *p = *head;
+
+	if (head == NULL)
 	{
 		return (0);
 	}
-	while (*head)
-	{
-		*head = ((*head)->next);
-		free(*head);
+		*head = p->next;
+		k = p->n;
+		free(p);
 	}
-	return (*head);
+	return (k);
 }
