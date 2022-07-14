@@ -10,7 +10,7 @@ size_t print_listint(const listint_t *h)
 	int count = 0;
 	const listint_t *ct = h;
 
-	if (h < 0)
+	if (ct->next < 0)
 	{
 		_putchar('-');
 	}
