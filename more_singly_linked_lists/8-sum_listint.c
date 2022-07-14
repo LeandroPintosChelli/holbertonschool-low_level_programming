@@ -10,16 +10,16 @@
 */
 int sum_listint(listint_t *head)
 {
-int count = 0;
+int suma = 0;
 
 	if (!head)
 	{
 		return (0);
 	}
-	while (count)
+	while (head)
 	{
-		count += head->n;
+		suma += head->n;
 		head = head->next;
 	}
-return (count);
+return (suma);
 }
