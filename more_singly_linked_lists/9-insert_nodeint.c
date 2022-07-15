@@ -41,6 +41,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			bef->next = pos;
 			return (pos);
 		}
+		else
+			bef = bef->next;
 	}
 	return (NULL);
 }
