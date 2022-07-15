@@ -4,9 +4,10 @@
 #include <string.h>
 #include <stdio.h>
 /**
-* pop_listint - agrega nodo al final
+* delete_nodeint_at_index - borra un nodo en poscision central
 * @head: head
-* Return: *head
+* @index: index
+* Return: +1, -1
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -22,7 +23,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(tmp);
 		return (1);
 	}
-	while (tmp && idx < index -1)
+	while (tmp && idx < index - 1)
 	{
 		tmp = tmp->next;
 		idx++;
