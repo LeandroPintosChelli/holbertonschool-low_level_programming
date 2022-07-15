@@ -28,7 +28,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		pos = pos->next;
 		i++;
 	}
-	if (!newnode)
+	if (!bef)
 	{
 		return (NULL);
 	}
@@ -40,5 +40,5 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		bef->next = pos;
 		*head = pos;
 	}
-	return (newnode);
+	return (NULL);
 }
