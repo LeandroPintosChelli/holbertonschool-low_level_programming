@@ -6,23 +6,26 @@
 */
 void print_binary(unsigned long int n)
 {
-	if (n > 1)
-	{
-		print_binary(n >> 1);
-		_putchar(n);
-		_putchar('1');
-	}
-}
+	unsigned long int result = 0;
+	int i, count = 0;
 
-/**
-*
-*
-*
-*/
-int _2print(void)
-{
-	print_binary(131);
-	_putchar('\0');
-	print_binary(3);
-	return (0);
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+	for (i = 63; i >= 0; i--)
+	{
+		result = n >> i;
+
+		if (result & 1)
+		{
+			_putchar('1');
+			count++;
+		}
+		else if (count)
+		{
+			_putchar('0');
+		}
+	}
 }
