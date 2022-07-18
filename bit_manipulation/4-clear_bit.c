@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* set_bit - returns the value of a bit
+* clear_bit - returns the value of a bit
 * @n: unsigned long int
 * @index: unsigned int
 * Return: n & 1
