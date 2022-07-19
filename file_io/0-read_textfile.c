@@ -3,6 +3,7 @@
 * read_textfile - read a text file
 * @filename: const char
 * @letters: poem
+* Return: w
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
