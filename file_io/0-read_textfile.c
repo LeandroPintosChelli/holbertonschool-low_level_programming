@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-*
-*
-*
+* read_textfile - read a text file
+* @filename: const char
+* @letters: poem
 */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
