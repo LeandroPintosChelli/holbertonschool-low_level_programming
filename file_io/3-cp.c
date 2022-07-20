@@ -53,9 +53,9 @@ int main(int argc, char *argv[])
 		if (r == -1)
 			__exit(98, argv[1], 0);
 
-	w = write(o, buffer, r);
-	if (w == -1)
-		__exit(99, argv[2], 0);
+		w = write(o, buffer, r);
+		if (w == -1)
+			__exit(99, argv[2], 0);
 	}
 
 	close(o) == -1 ? (__exit(100, NULL, o)) : close(o);
