@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	char *buffer[1024];
 
 	if (argc != 3)
-	__exit(97);
+	__exit(97, NULL, 0);
 
 	o = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (o == -1)
