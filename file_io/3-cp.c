@@ -11,7 +11,7 @@ int __exit(int error, char *s, int fd)
 	switch (error)
 	{
 	case 97:
-	dprintf(STDERR_FILENO, "Usage: cp file_from file_toUsage: cp file_from file_to\n");
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(error);
 	case 98:
 	dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE%s\n", s);
