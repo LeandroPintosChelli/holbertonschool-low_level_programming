@@ -23,7 +23,7 @@ int __exit(int error, char *s, int fd)
 	dprintf(STDERR_FILENO, "Error: Can't close fd FD_VALUE%d\n", fd);
 		exit(error);
 	default:
-	return (0);
+		return (0);
 	}
 }
 /**
@@ -38,11 +38,11 @@ int main(int argc, char *argv[])
 	char *buffer[1024];
 
 	if (argc != 3)
-	__exit(97, NULL, 0);
+		__exit(97, NULL, 0);
 
 	o = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (o == -1)
-	__exit(99, argv[2], 0);
+		__exit(99, argv[2], 0);
 
 	j = open(argv[1], O_RDONLY);
 	if (j == -1)
