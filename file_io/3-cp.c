@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* _exit - print error and exit
+* __exit - print error and exit
 * @error: num is either exit value
 * @s: str is a name
 * @fd: file descriptor
@@ -38,7 +38,7 @@ int main(int argc, char *argv[])
 	char *buffer[1024];
 
 	if (argc != 3)
-		__exit(97);
+	__exit(97);
 
 	o = open(argv[2], O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (o == -1)
