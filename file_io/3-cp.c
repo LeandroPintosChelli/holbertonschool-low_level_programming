@@ -59,6 +59,6 @@ int main(int argc, char *argv[])
 	}
 
 	close(o) == -1 ? (__exit(100, NULL, o)) : close(o);
-	close(j) == -1 ? (__exit(100, NULL, j)) : close(j)
+	close(j) == -1 ? (__exit(100, NULL, j)) : close(j);
 	return (0);
 }
