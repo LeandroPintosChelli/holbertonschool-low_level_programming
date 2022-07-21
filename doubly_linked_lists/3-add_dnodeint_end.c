@@ -1,8 +1,9 @@
 #include "lists.h"
 #include <string.h>
+#include <stdlib.h>
 /**
-*
-*
+* add_dnodedint_end - add a newnode at the end
+* @head
 *
 *
 */
