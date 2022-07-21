@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
-* add_dnodedint_end - add a newnode at the end
+* add_dnodeint_end - add a newnode at the end
 * @head: pointer to head of list
 * @n: node data
 * Return: newnoded
