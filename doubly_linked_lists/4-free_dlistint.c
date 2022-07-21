@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <stdlib.h>
 /**
-* free_dlistint
+* free_dlistint - free
 * @head: address node
 * Return: void
 */
