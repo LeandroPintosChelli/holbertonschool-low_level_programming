@@ -3,33 +3,38 @@
 #include <stdlib.h>
 /**
 * add_dnodedint_end - add a newnode at the end
-* @head
-*
-*
+* @head: pointer to head of list
+* @n: node data
+* Return: newnoded
 */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *last = *head;
+	dlistint_t *last;
 	dlistint_t *newnode;
+
+	if (!head)
+		return (NULL);
 
 	newnode = malloc(sizeof(dlistint_t));
 
-	if (newnode != NULL)
-	{
-		newnode->n = n;
-		newnode->next = NULL;
-	}
+	if (!newnode)
+		return (NULL);
+	newnode->n = n;
+
 	if (*head == NULL)
 	{
-		newnode->prev = NULL;
 		*head = newnode;
-		return (*head);
+		newnode->next = NULL;
+		newnode->prev = NULL;
+		return (newnode);
 	}
+
+	last = *head;
 	while (last->next != NULL)
-	{
-		last->next = newnode;
-		newnode->prev = last;
-		return(*head);
-	}
-	return (NULL);
+		last = last->next;
+	newnode->next = NULL;
+	newnode->prev = last;
+	last->next = newnode;
+
+	return (newnode);
 }
