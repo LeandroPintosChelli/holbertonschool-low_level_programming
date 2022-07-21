@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
 * free_dlistint
 * @head: address node
