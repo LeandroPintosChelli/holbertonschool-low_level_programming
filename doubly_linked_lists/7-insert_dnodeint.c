@@ -26,6 +26,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	new->next = bef->next;
 	bef->next->prev = new;
 	bef->next = new;
+	new->next = 0;
 
 	if (idx == 0)
 	{
