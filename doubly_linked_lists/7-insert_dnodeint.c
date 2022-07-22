@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
 * insert_dnodeint_at_index - insert a new node in a given position
-* @head: head
+* @h: head
 * @idx: unsigned int
 * @n: int
 * Return: *head
@@ -22,6 +22,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		free(p);
 	}
 	p->n = n;
+	p->prev = p->next;
 	p->next = 0;
 
 	if (idx == 0)
