@@ -34,7 +34,7 @@
 
 9-strcpy.c: a function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest
 
-##More pointers and arrays:
+## More pointers and arrays:
 
 0-strcat.c: function that concatenates two strings
 
@@ -50,7 +50,7 @@
 
 7-leet.c: function that encodes a string into 1337 (leet)
 
-##Even more pointer and arrays:
+## Even more pointer and arrays:
 
 0-memset.c: a function that fills memory with a constant byte (memset)
 
