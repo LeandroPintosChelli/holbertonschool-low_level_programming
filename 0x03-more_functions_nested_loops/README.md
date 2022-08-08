@@ -2,7 +2,7 @@
 
 ## Requirements
 * Language: C
-* OS: Ubuntu 14.04 LTS
+* OS: Ubuntu 16.04
 * Compiler: gcc flags -Wall -Werror -pedantic -Wextra
 
 ## Dscription of what each file does:
