@@ -8,8 +8,8 @@
 ### Requirements
 
 * C programming language
-* Ubuntu 14.04 LTS
-* gcc using the flags -Wall -Werror -Wextra and -pedantic
+* Ubuntu 16.04
+* cc using the flags -Wall -Werror -Wextra and -pedantic
 
 ## Synopsis
 
