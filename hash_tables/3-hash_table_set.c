@@ -10,33 +10,40 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *newnode;
-	char *value_copy;
 	unsigned long int index, size;
 
-	if (ht == NULL || key == NULL || value == NULL)
+	newnode = malloc(sizeof(hash_node_t));
+	if (ht == NULL || key == NULL || value == NULL || newnode == NULL)
+	{
+		free(newnode);
 		return (0);
-
-	value_copy = strdup(value);
-	if (value_copy == NULL)
-		return (0);
-
+	}
 	size = ht->size;
 	index = key_index((const unsigned char *)key, size);
-
-	if (ht->array[index] != NULL && strcmp(ht->array[index]->key, key) == 0)
-	{
-		ht->array[index]->value = value_copy;
-		return (1);
-	}
-	newnode = malloc(sizeof(hash_node_t));
-	if (newnode == NULL)
-		return (0);
-
 	newnode->key = strdup(key);
+	newnode->value = strdup(value);
 
-	newnode->value = value_copy;
-	newnode->next = ht->array[index];
-	ht->array[index] = newnode;
+	if (!newnode->key || !newnode->value)
+		free(newnode->key), free(newnode->value);
 
+	if (!ht->array[index])
+	{
+		ht->array[index] = newnode;
+		newnode->next = NULL;
+	}
+	else
+	{
+		if (strcmp(ht->array[index]->key, key) == 0)
+		{
+			free(ht->array[index]->value);
+			ht->array[index]->value = strdup(value);
+			free(newnode->key), free(newnode->value), free(newnode);
+		}
+		else
+		{
+			newnode->next = ht->array[index];
+			ht->array[index] = newnode;
+		}
+	}
 	return (1);
 }
